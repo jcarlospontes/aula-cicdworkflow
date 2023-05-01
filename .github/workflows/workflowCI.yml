@@ -8,10 +8,6 @@ on:
     branches:
       - feature-new
   workflow_dispatch:
-  
-defaults:
-  run:
-    working-directory: frontend/gmusic/
 
 jobs:
   job-CI:
