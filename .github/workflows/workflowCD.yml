@@ -52,6 +52,7 @@ jobs:
       
       - name: Fazendo Deploy
         run: |
+          ssh google-cloud 'sudo mkdir /home/github/react-app'
           ssh google-cloud 'sudo systemctl stop exercicioworkflow'
           ssh google-cloud 'sudo rm -rf /app/react-app'
           scp -r build google-cloud:/app/react-app
