@@ -1,9 +1,6 @@
 name: workflowCI
 
 on:
-  push:
-    branches:
-      - feature-new
   pull_request:
     branches:
       - feature-new
