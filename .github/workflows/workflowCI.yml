@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - feature-new
-  pull_request:
-    branches:
-      - feature-new
   workflow_dispatch:
 
 jobs:
