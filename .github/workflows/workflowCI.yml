@@ -17,5 +17,5 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-          docker build ./pagina/ -t $DOCKER_USER/atividadehtml:latest
+          docker build pagina/ -t $DOCKER_USER/atividadehtml:latest
           docker push $DOCKER_USER/atividadehtml:latest
